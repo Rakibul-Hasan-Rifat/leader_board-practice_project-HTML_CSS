@@ -19,9 +19,9 @@ header {
     height: 15vh;
     margin-bottom: 25px;
     background-color: #562EFF;
-    /* position: sticky;
+    position: sticky;
     top: 0;
-    left: 0; */
+    left: 0;
 }
 
 header #header {
