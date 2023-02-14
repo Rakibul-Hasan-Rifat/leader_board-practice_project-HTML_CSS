@@ -2,20 +2,19 @@
 font-family: 'Roboto', sans-serif; */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; padding: 0; box-sizing: border-box;
     font-family: sans-serif;
 }
 
 body {
-    width: 100vw;
+    max-width: 1310px;
+    margin: 0 auto;
     background-color: #F3F1FF;
     overflow-x: hidden;
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     height: 15vh;
     margin-bottom: 25px;
     background-color: #562EFF;
@@ -25,7 +24,8 @@ header {
 }
 
 header #header {
-    width: 59vw;
+    /* width: 59vw; */
+    width: 60%;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -78,7 +78,7 @@ input#hidden-btn {
 
 #player_blog_section,
 #courses_section {
-    width: 60vw;
+    width: 60%;
     margin: 0 auto 50px;
     padding: 25px;
     border-radius: 8px;
@@ -236,7 +236,8 @@ hr {
         flex-direction: column;
         position: absolute;
         top: 100%;
-        background-color: #9F9F9F;
+        background-color: rgba(43, 41, 41, 0.3);
+        backdrop-filter: blur(10px);
         display: none;
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
@@ -255,10 +256,7 @@ hr {
         width: 100%;
         text-align: center;
         padding: 15px;
-    }
-
-    input#hidden-btn {
-        display: none;
+        color: #000;
     }
 
     input#hidden-btn:checked+nav {
@@ -273,7 +271,7 @@ hr {
     #player_blog_section h3,
     #courses_section h3 {
         text-align: center;
-        font-size: 1.7rem;
+        font-size: xx-large;
     }
 
     #player_blog_section .players,
@@ -404,5 +402,12 @@ hr {
     #courses_section .courses .course div p small {
         width: 60%;
         display: flex;
+    }
+}
+
+@media screen and (min-width: 1310px) {
+    h3 {
+        font-size: xx-large;
+        text-align: center;
     }
 }
