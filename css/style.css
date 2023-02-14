@@ -150,7 +150,8 @@ hr {
 }
 
 #courses_section .courses .course {
-    width: 30%;
+    width: 32%;
+    min-height: 230px;
     display: flex;
     flex-direction: column;
     padding: 15px 20px;
